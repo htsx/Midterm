@@ -2,18 +2,15 @@
     <head>
         <h1>Calculator</h1>
     </head>
-            <input type="number" name="n1" palceholder="Enter a Number" id="">
-            <input type="number" name="n2" palceholder="Enter a Number" id="">
-            <div>
-                <a href = "/add"><button type="submit" >Add</button></a>
-            </div>
-            <div>
-                <button type="submit">Sub</button>
-            </div>
-            <div>
-                <button type="submit">Mult</button>
-            </div>
-            <div>
-                <button type="submit">Div</button>
-            </div>
+    <head>
+        <h4>Adding</h4>
+        <form method = "POST">
+            <input type="text" name="n1">
+            <input type="text" name="n1">
+            <input type="submit" value="add">
+        </form>
+        {% if result %}
+            <p>Result is: {{ result}}</p>
+        {% endif %}
+    </head>
 </html>
