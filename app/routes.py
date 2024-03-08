@@ -5,10 +5,9 @@ from flask import render_template, request
 def home():
     return render_template('homepage.html')
 
-@app.route('/add', methods=['GET', 'POST'])
+@app.route('/add', methods=['POST'])
 def add():
-    if request.method == 'POST':
-        n1 = float(request.form['n1'])
-        n2 = float(request.form['n2'])
-        result = n1+n2
-    return render_template('add.html', result=result)
+    n1 = float(request.form['n1'])
+    n2 = float(request.form['n2'])
+    result = n1+n2
+    return render_template('result.html', result=result)
