@@ -6,7 +6,7 @@ import sys
 def main():
     return render_template('homepage.html')
 
-@app.route('/add', methods=['GET',"POST"])
+@app.route('/', methods=['GET',"POST"])
 def add():
     if request.method == "POST":
         num1 = request.form['num1']
