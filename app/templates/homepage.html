@@ -4,26 +4,10 @@
     </head>
       <form>
         <div>
-            <label for="First Number">1st Number</label>
-            <input type ="text" placeholder="First Number" name="n1"/>
+            <input type="text" name="display">
         </div>
-        <div>
-            <label for="Second Number">2nd Number</label>
-            <input type ="text" placeholder="Second Number" name="n2"/>
-        </div>
-          <input type="submit" value="Add" id="calc_btn" class="btn" onclick = "location.href='/add'"/>
-        </div>
-        <div>
-            <input type="submit" value="Substract" id="calc_btn" class="btn" onclick = "location.href='/substract'"/>
-        </div>
-        <div>
-            <input type="submit" value="Multiplying" id="calc_btn" class="btn" onclick = "location.href='/multiply'"/>
-        </div>
-        <div>
-            <input type="submit" value="Dividing" id="calc_btn" class="btn" onclick = "location.href='/divide'"/>
-        </div>
-        <div class="alert">
-            {{ result }}
-        </div>
+        <tr>
+            <td><input type="button" value="0" onclick="display.value += '0'"></td>
+        </tr>
     </form>
 </html>
