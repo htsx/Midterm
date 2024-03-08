@@ -13,21 +13,21 @@ def add():
     return render_template('add.html', result=result)
 
 @app.route('/sub', methods=['POST'])
-def add():
+def sub():
     n1 = float(request.form['n1'])
     n2 = float(request.form['n2'])
     result = n1+n2
     return render_template('substract.html', result=result)
 
 @app.route('/mult', methods=['POST'])
-def add():
+def mult():
     n1 = float(request.form['n1'])
     n2 = float(request.form['n2'])
     result = n1+n2
     return render_template('multiply.html', result=result)
 
 @app.route('/div', methods=['POST'])
-def add():
+def divide():
     n1 = float(request.form['n1'])
     n2 = float(request.form['n2'])
     result = n1+n2
