@@ -1,6 +1,8 @@
 from app import app
 from flask import Flask, render_template, redirect, request
 
+app = Flask(__name__)
+
 @app.route('/', methods=['GET',"POST"])
 def add():
     if request.method == "POST":
