@@ -6,6 +6,6 @@ def add():
     if request.method == "POST":
         n1 = request.form.get('n1')
         n2 = request.form.get('n2')
-        add = float(num1) + float(num2)
+        add = float(n1) + float(n2)
         return render_template('add.html', add=add)
     return render_template('homepage.html')
