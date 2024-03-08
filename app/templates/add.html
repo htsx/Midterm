@@ -1,16 +1,7 @@
-<html>
-    <head>
-        <h1>Calculator</h1>
-    </head>
-    <head>
-        <h4>Adding</h4>
-        <form method = "POST">
-            <input type="text" name="n1">
-            <input type="text" name="n2">
-            <input type="submit" value="add">
-        </form>
-        {% if result %}
-            <p>Result is: {{ result}}</p>
-        {% endif %}
-    </head>
-</html>
+{% extends "homepage.html" %}
+
+{% block content %}
+    {% if result %}
+    <p>Result is: {{ result}}</p>
+    {% endif %}
+{% endblock %}
