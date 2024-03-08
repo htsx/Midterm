@@ -2,42 +2,9 @@
     <head>
         <h1>Calculator</h1>
     </head>
-      <form>
-        <div>
-            <input type="text" name="display">
-        </div>
-        <tr>
-            <div>
-                <td><input type="button" value="0" onclick="display.value += '0'"></td>
-                <td><input type="button" value="9" onclick="display.value += '9'"></td>
-                <td><input type="button" value="8" onclick="display.value += '8'"></td>
-                <td><input type="button" value="7" onclick="display.value += '7'"></td>
-                <td><input type="button" value="6" onclick="display.value += '6'"></td>
-            </div>
-        </tr>
-        <tr>
-            <div>
-                <td><input type="button" value="5" onclick="display.value += '5'"></td>
-                <td><input type="button" value="4" onclick="display.value += '4'"></td>
-                <td><input type="button" value="3" onclick="display.value += '3'"></td>
-                <td><input type="button" value="2" onclick="display.value += '2'"></td>
-                <td><input type="button" value="1" onclick="display.value += '1'"></td>
-            </div>
-        </tr>
-        <tr>
-            <div>
-                <td><input type="button" value="+" onclick="display.value += '+'"></td>
-                <td><input type="button" value="-" onclick="display.value += '-'"></td>
-                <td><input type="button" value="*" onclick="display.value += '*'"></td>
-                <td><input type="button" value="/" onclick="display.value += '/'"></td>
-                <td><input type="button" value="." onclick="display.value += '.'"></td>
-            </div>
-        </tr>
-        <tr>
-            <div>
-                <td><input type="button" value="AC" onclick="display.value = ''"></td>
-            </div>
-        </tr>
-        </form>
+      <form action ="/" method="POST">
+        <input type="number" name = "n1" placeholder = "Enter 1st Number" id="">
+        <input type="number" name = "n2" placeholder = "Enter 2nd Number" id="">
+        <button type="submit">Add</button>
     </form>
 </html>

@@ -6,10 +6,12 @@ import sys
 def main():
     return render_template('homepage.html')
 
-@app.route('/add')
+@app.route('/add', methods=['GET',"POST"])
 def add():
-    num1 = request.form['num1']
-    num2 = request.form['num2']
-    add = request.form['add']
-    result = float(num1) + float(num2)
-    return render_template('add.html', result=result)
+    if request.method == "POST"
+        num1 = request.form['num1']
+        num2 = request.form['num2']
+        add = float(num1) + float(num2)
+        result = float(num1) + float(num2)
+        return render_template('add.html', add=add)
+    return render_template('homepage.html')
