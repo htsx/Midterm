@@ -8,7 +8,7 @@ def main():
 
 @app.route('/add', methods=['GET',"POST"])
 def add():
-    if request.method == "POST"
+    if request.method == "POST":
         num1 = request.form['num1']
         num2 = request.form['num2']
         add = float(num1) + float(num2)
