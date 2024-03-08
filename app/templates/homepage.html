@@ -2,43 +2,17 @@
     <head>
         <h1>Calculator</h1>
     </head>
-    <form>
-        <div>
-            <div>
-                <input type ="text" name = "display">
-            </div>
-            <div>
-                <input type = "button" value="9" onclick += "9">
-                <input type = "button" value="7" onclick += "7">
-                <input type = "button" value="8" onclick += "8">
-            </div>
-            <div>
-                <input type = "button" value="6" onclick += "6">
-                <input type = "button" value="5" onclick += "5">
-                <input type = "button" value="4" onclick += "4">
-            </div>
-            <div>
-                <input type = "button" value="3" onclick += "3">
-                <input type = "button" value="2" onclick += "2">
-                <input type = "button" value="1" onclick += "1">
-            </div>
-            <div>
-                <input type = "button" value="AC" onclick = "">
-                <input type = "button" value="0" onclick += "0">
-                <input type = "button" value="DE">
-            </div>
-            <div>
-                <input type = "button" value=".">
-                <input type = "button" value="/">
-            </div>
-            <div>
-                <input type = "button" value="+" onclick = "location.href = '/add'">
-            </div>
-            <a href="/add"><button>Add</button></a>
-            <a href="/substract"><button>Substract</button></a>
-            <a href="/multiply"><button>Multiply</button></a>
-            <a href="/divide"><button>Divide</button></a>
-            <a href="/clear"><button>Clear</button></a>
+    <form action="" method="POST">
+        <label for="First Number">1st Number</label>
+        <input type ="text" placeholder="First Number" name="n1"/>
+        <label for="Second Number">2nd Number</label>
+        <input type ="text" placeholder="Second Number" name="n2"/>
+        <label for="add">Adding</label>
+          <select name="add">
+            <option value="add">Add</option>
+          </select>
+        <div class="alert">
+            {{ result }}
         </div>
     </form>
 </html>

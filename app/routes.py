@@ -8,20 +8,8 @@ def main():
 
 @app.route('/add')
 def add():
-    return render_template('add.html')
-
-@app.route('/substract')
-def substract():
-    return render_template('substract.html')
-
-@app.route('/multiply')
-def multiply():
-    return render_template('multiply.html')
-
-@app.route('/divide')
-def divide():
-    return render_template('divide.html')
-
-@app.route('/clear')
-def clear():
-    return render_template('clear.html')
+    num1 = request.form['num1']
+    num2 = request.form['num2']
+    add = request.form['add']
+    result = float(num1) + float(num2)
+    return render_template('add.html', result=result)
